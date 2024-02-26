@@ -9,6 +9,8 @@
         "frame-title": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "button-type": "off",
+    "axe/forms": "off"
   }
 }
