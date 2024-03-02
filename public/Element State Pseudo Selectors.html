@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element State Pseudo Selectors</title>
+    <style>
+        #txtname:disabled{
+            background-color: red;
+            cursor: not-allowed;
+        }
+        button:disabled{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    User Name
+    <input type="text" id="txtname" value="vishal" disabled>
+    <button disabled>Submit</button>
+</body>
+</html>

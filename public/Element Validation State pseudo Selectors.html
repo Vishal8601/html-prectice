@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Validaton State Pseudo Selectors</title>
+    <style>
+        #UserName:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+        #UserName:valid{
+            border: 1px solid green;
+            box-shadow: 2px 2px 3px green;
+        } 
+        #UserName:invalid+span{
+            display: block;
+        }
+        #UserName:valid+span{
+            display: none;
+        }
+        #UserName+span{
+            color: red;
+        }
+
+        #password:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+        
+
+        #password+span{
+            color: red;
+        }
+        #password:invalid+span{
+            display: block;
+        }
+        #password:valid+span
+        {
+            display: none;
+        }
+        #age:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+        /* #age:valid{
+            border: 2px solid green;
+            box-shadow: 2px 2px 3px green;
+        } */
+        #age+span{
+            color: red;
+        }
+        #age:valid+span{
+            display: none;
+        }
+        #age:invalid+span{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Register User</h2>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName" required>
+            <span>User name required</span>
+        </dd>
+        <dt>Password</dt>
+        <dd>
+            <input type="password" id="password" pattern="[A-Z]{4,10}" >
+            <span>Password 4 to 10 char upper case only</span>
+        </dd>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" id="age" min="15" max="30" >
+            <span>Age is only 15 to 30</span>
+        </dd>
+    </dl>
+</body>
+</html>
