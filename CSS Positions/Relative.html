@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <Style>
+      div{
+        border: 1px solid red;
+      }
+      #parent{
+        height: 300px;
+        width: 600px;
+        position: static;
+        margin-left: 100px;
+      }
+      #child{
+        height: 100px;
+        width: 150px;
+        position: relative;
+        margin-left: 100px;
+      }
+    </Style>
+</head>
+<body>
+    <div id="parent">
+       parent container
+        <div id="child">
+            child container
+        </div>
+    </div>
+</body>
+</html>
